@@ -1,0 +1,41 @@
+.profile-container {
+    background-color: #99c0ec;
+    padding: 30px;
+    border-radius: 15px; /* ทำมุมโค้งมน */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ใส่เงาให้กล่องดูมิติ */
+    max-width: 600px;
+    margin: 20px auto;
+}
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;          /* ระยะห่างระหว่างรูปภาพทั้งสองรูป */
+    width: 100%;
+    max-width: 500px;   /* ปรับขนาดความกว้างรวมตามความเหมาะสม */
+    margin: 0 auto;     /* จัดกล่องให้อยู่กึ่งกลางหน้าจอ */
+}
+
+/* ตั้งค่าให้รูปภาพทั้งสองรูปมีขนาดเท่ากัน */
+.image-gallery img {
+    width: 50%;         /* ให้แต่ละรูปกินพื้นที่คนละครึ่งหนึ่งของกล่องกว้าง */
+    height: 300px;      /* กำหนดความสูงที่ต้องการให้เท่ากัน (ปรับตัวเลขได้ตามชอบ) */
+    object-fit: cover;  /* ป้องกันไม่ให้รูปภาพบิดเบี้ยวหรือเสียสัดส่วน */
+    border-radius: 8px; /* เพิ่มความโค้งมนให้ขอบรูปภาพ (ใส่หรือไม่ใส่ก็ได้) */
+}
+h2 {
+    font-size: 40px; /* ปรับขนาดตามต้องการ เช่น 36px, 2.5rem */
+    color: #dd10ad;  /* เปลี่ยนสีข้อความให้ดูนุ่มนวลขึ้น */
+    margin-bottom: 10px;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b5ead8; /* สีพื้นหลังโทนสว่างสบายตา */
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.small-preview {
+    width: 1000px;  /* ปรับเปลี่ยนตัวเลขขนาดได้ตามใจชอบ */
+    height: auto;  /* ช่วยให้รูปไม่บี้หรือยืด */
+}
